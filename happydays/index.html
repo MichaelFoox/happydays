@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/media.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+	 crossorigin="anonymous"></script>
+	<title>Главная | Happy Days</title>
+	<!-- Facebook Pixel Code -->
+	<script>
+		!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+		n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+		n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+		t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+		document,'script','https://connect.facebook.net/en_US/fbevents.js');
+		fbq('init', '1707404186171099'); // Insert your pixel ID here.
+		fbq('track', 'PageView');
+	</script>
+	<noscript>
+		<img height="1" width="1" style="display:none"
+			src="https://www.facebook.com/tr?id=1707404186171099&ev=PageView&noscript=1"/>
+	</noscript>
+	<!-- End of Facebook Pixel Code-->
+</head>
+
+<script>fbq('track', 'ViewContent');</script> <!--Facebook Pixel Event-->
+
+<body>
+
+	<div class="callform-wrap" onclick="closeForm()">
+	</div>
+	<form class="callform w3-display-middle">
+			<div class="caption">
+				просто заполните форму ниже
+			</div>
+			<input type="text" name="firstname" placeholder="Ф.И.О." id="input1">
+			<input type="text" name="firstname" placeholder="Телефон" id="input2">
+			<input type="text" name="firstname" placeholder="E-Mail" id="input3">
+			<button id="form-btn1">отправить</button>
+			<button id="form-btn2" onclick="closeForm()" type="button">закрыть</button>
+	</form>
+
+	<div class="menu">
+		<div class="menu-btn">
+			<img src="img/menu.png"/>
+		</div>
+		<ul class="menu-list">
+			<li id="menu-ttl">по сайту :</li>
+			<li><a href="index.html">главная</a></li>
+			<li><a href="services.html">аттракционы</a></li>
+			<li><a href="discounts.html">акции и скидки</a></li>
+			<li><a href="prices.html">цены</a></li>
+			<li><a href="contacts.html">контакты</a></li>
+		</ul>
+		<ul class="menu-list">
+			<li>&nbsp;</li>
+			<li id="menu-ttl">по странице :</li>
+			<li id="menu1">наверх</li>
+			<li id="menu2">о нас</li>
+			<li id="menu3">программы</li>
+			<li id="menu4">доп. услуги</li>
+			<li id="menu5">почему мы?</li>
+			<li id="menu6">отзывы</li>
+			<li id="menu7">информация</li>
+		</ul>
+	</div>
+
+	<header>
+		<div class="cloud cloud-big">
+			<img class="logo w3-display-middle" src="img/logo.png">
+		</div>
+		<div class="cloud cloud-left">
+			<div class="w3-display-middle">
+				<span class="text text-darkblue">
+					акционные <br>
+				</span>
+				<span class="text text-blue">
+					предложения <br>
+				</span>
+				<button class="btn btn-blue">
+					посмотреть
+				</button>
+			</div>
+		</div>
+		<div class="cloud cloud-right">
+			<div class="w3-display-middle">
+				<span class="text text-darkpurple">
+					номер телефона <br>
+				</span>
+				<span class="text text-purple">
+					(054) 486-02-41 <br>
+				</span>
+				<button class="btn btn-purple" onclick="openForm()">
+					заказать звонок
+				</button>
+			</div>
+		</div>
+	</header>
+
+	<section class="video-section">
+		<img class="logo-big w3-display-middle" src="img/logo-big.png">
+		<video src="img/video.mp4" loop muted autoplay></video>
+	</section>
+
+	<section class="facts-section">
+		<div class="caption">
+			4 факта о нас
+		</div>
+		<div class="w3-row">
+			<div class="w3-half">
+				<div class="photocard">
+					<div class="photocard-paper">
+						<div class="photocard-photo" id="photo1"></div>
+					</div>
+				</div>
+				<div class="facts-text">
+					<div class="facts-text-caption">
+						Мы застрахованы
+					</div>
+					Ваша безопасность - наш приоритет!
+				</div>
+			</div>
+			<div class="w3-half">
+				<div class="photocard">
+					<div class="photocard-paper">
+						<div class="photocard-photo" id="photo2"></div>
+					</div>
+				</div>
+				<div class="facts-text">
+					<div class="facts-text-caption">
+						Веселые аттракционы
+					</div>
+					приедут к вам в любую точку страны!
+				</div>
+			</div>
+		</div>
+		<div class="w3-row">
+			<div class="w3-half">
+				<div class="photocard">
+					<div class="photocard-paper">
+						<div class="photocard-photo" id="photo3"></div>
+					</div>
+				</div>
+				<div class="facts-text">
+					<div class="facts-text-caption">
+						Авторские сценарии и программы
+					</div>
+					Мы вдохновляемся тем, что любят дети.
+				</div>
+			</div>
+			<div class="w3-half">
+				<div class="photocard">
+					<div class="photocard-paper">
+						<div class="photocard-photo" id="photo4"></div>
+					</div>
+				</div>
+				<div class="facts-text">
+					<div class="facts-text-caption">
+						Мы - зарегистрированная компания
+					</div>
+					Имеем разрешение от ИРИИ<br> на празднование в парках.
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="hits-section">
+		<div class="caption">
+			наши хиты
+		</div>
+		<div class="slider-wrap">
+			<div class="arrow arrow-left"></div>
+			<div class="slider">
+
+			</div>
+			<div class="slider-title"></div>
+			<div class="arrow arrow-right"></div>
+		</div>
+		<button class="big-btn" onclick="openForm()">
+				хочу так же!
+		</button>
+	</section>
+
+	<section class="holiday-section">
+		<div class="caption">
+			добавьте к празднику
+		</div>
+		<div class="w3-row">
+			<div class="w3-half">
+				<div class="photocard">
+					<div class="photocard-paper">
+						<div class="photocard-photo" id="photo5"></div>
+					</div>
+				</div>
+				<div class="holiday-text">
+					Детские торты
+				</div>
+			</div>
+			<div class="w3-half">
+				<div class="photocard">
+					<div class="photocard-paper">
+						<div class="photocard-photo" id="photo6"></div>
+					</div>
+				</div>
+				<div class="holiday-text">
+					Аквагрим
+				</div>
+			</div>
+		</div>
+		<div class="w3-row">
+			<div class="w3-half">
+				<div class="photocard">
+					<div class="photocard-paper">
+						<div class="photocard-photo" id="photo7"></div>
+					</div>
+				</div>
+				<div class="holiday-text">
+					Батуты
+				</div>
+			</div>
+			<div class="w3-half">
+				<div class="photocard">
+					<div class="photocard-paper">
+						<div class="photocard-photo" id="photo8"></div>
+					</div>
+				</div>
+				<div class="holiday-text">
+					Мыльные пузыри
+				</div>
+			</div>
+		</div>
+		<div class="w3-row">
+			<div class="w3-quarter">&nbsp;</div>
+			<div class="w3-half">
+				<div class="photocard">
+					<div class="photocard-paper">
+						<div class="photocard-photo" id="photo9"></div>
+					</div>
+				</div>
+				<div class="holiday-text">
+					Angry Birds
+				</div>
+			</div>
+			<div class="w3-quarter">&nbsp;</div>
+		</div>
+	</section>
+
+	<section class="smiles-section">
+		<div class="caption">
+			как рождаются улыбки
+		</div>
+		<div class="w3-container smiles-block" id="one">
+			<div class="smiles-text-box" id="color1">
+				<div class="smiles-text-caption">
+					Массовые<br> мероприятия
+				</div>
+				<div class="smiles-text">
+					Нужно развеселить весь детский сад?<br> Или вы с коллегами<br> хотите устроить<br> праздник своим детям? Мы делаем<br>					масштабные мероприятия<br> запоминающимися и интересными<br> для каждого участника.
+				</div>
+			</div>
+		</div>
+		<div class="w3-container smiles-block" id="two">
+			<div class="smiles-text-box smiles-text-box-right" id="color2">
+				<div class="smiles-text-caption">
+					От торта<br> до подарка
+				</div>
+				<div class="smiles-text">
+					Вы получаете праздник "под ключ":<br> мы продумываем подарки, украшаем<br> помещение, заказываем тематический<br> торт
+					и многое другое.<br> Вам не надо думать, чем кормить<br> детей и что им дарить.<br> Вам остается только красиво нарядиться.
+				</div>
+			</div>
+		</div>
+
+		<div class="w3-container smiles-block" id="three">
+			<div class="smiles-text-box" id="color3">
+				<div class="smiles-text-caption">
+					Мы работаем -<br> вы отдыхаете
+				</div>
+				<div class="smiles-text">
+					Наши программы<br> отрепетированы и<br> продуманы с учетом интересов<br> вашего ребёнка.<br> Сколько бы на празднике
+					не было<br> гостей - мы устроим настоящее<br> веселье.
+				</div>
+			</div>
+		</div>
+
+		<div class="w3-container smiles-block" id="four">
+			<div class="smiles-text-box smiles-text-box-right" id="color4">
+				<div class="smiles-text-caption">
+					Удивим<br> и подростка
+				</div>
+				<div class="smiles-text">
+					Ваш ребёнок вырос из детских<br> программ? Нет проблем, мы в курсе,<br> чем интересуються подростки.<br> О нашей вечеринке
+					захочется<br> написать во всех соц. сетях, а<br> профессиональные фото прибавят<br> лайков.
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="impressions-section">
+		<div class="caption">
+			что говорят родители
+		</div>
+		<div class="w3-row">
+			<div class="w3-half">
+				<div class="sphere-photo" id="imp-photo1"></div>
+			</div>
+			<div class="w3-half">
+				<div class="sphere-photo-text">
+					Спасибо ребят за радость и улыбки,<br> 
+					которые вы дарите детишкам;)<br> 
+					Желаем процветания вашему шоу<br> 
+					и счастья всей вашей команде;)<br>
+				</div>
+				<div class="sphere-photo-text-caption">
+					Юля, мама Лени Лежнева, Израиль
+				</div>
+				<button class="big-btn" onclick="openForm()">
+					хочу так же!
+				</button>
+			</div>
+		</div>
+		<div class="w3-row">
+			<div class="w3-half">
+				<div class="sphere-photo" id="imp-photo2"></div>
+			</div>
+			<div class="w3-half">
+				<div class="sphere-photo-text">
+					Отличная программа и сценарий,<br> 
+					спасибо! Детям понравилось)<br> 
+					Рекомендую Happy Days всем<br> 
+					родителям))<br>
+				</div>
+				<div class="sphere-photo-text-caption">
+					Мария, мама Оли Мельник, Израиль
+				</div>
+				<button class="big-btn" onclick="openForm()">
+					хочу так же!
+				</button>
+			</div>
+		</div>
+	</section>
+
+	<section class="howto-section">
+		<div class="caption">
+			как устроить праздник?
+		</div>
+		<div class="w3-row">
+			<div class="w3-third">
+				<div class="sphere" id="sphere1">
+					<div class="sphere-number">
+						1
+					</div>
+				</div>
+				<div class="sphere-text">
+					Вы звоните<br>
+					или оставляете<br>
+					заявку на сайте<br>
+				</div>
+			</div>
+			<div class="w3-third">
+				<div class="sphere" id="sphere2">
+					<div class="sphere-number">
+						2
+					</div>
+				</div>
+				<div class="sphere-text">
+					Наш менеджер выслушивает<br> 
+					ваши пожелания и предлагает<br> 
+					подходящие вам программы.<br>
+				</div>
+			</div>
+			<div class="w3-third">
+				<div class="sphere" id="sphere3">
+					<div class="sphere-number">
+						3
+					</div>
+				</div>
+				<div class="sphere-text">
+					Вы утверждаете программу –<br> 
+					мы продумываем сюжет,<br> 
+					репетируем и подбираем<br> 
+					реквизит.<br>
+				</div>
+			</div>
+		</div>
+		<div class="w3-row">	
+			<div class="w3-third">
+				<div class="sphere" id="sphere4">
+					<div class="sphere-number">
+						4
+					</div>
+				</div>
+				<div class="sphere-text">
+					Согласовываем с вами все<br> 
+					детали праздника, за день до<br> 
+					мероприятия делаем вам<br> 
+					контрольный звонок.<br>
+				</div>
+			</div>
+			<div class="w3-third">
+				<div class="sphere" id="sphere5">
+					<div class="sphere-number">
+						5
+					</div>
+				</div>
+				<div class="sphere-text">
+					В день праздника приезжаем<br> 
+					на площадку за 30-40 минут.<br> 
+					Украшаем, переодеваемся,<br>
+					встречаем гостей.<br>
+				</div>
+			</div>
+			<div class="w3-third">
+				<div class="sphere" id="sphere6">
+					<div class="sphere-number">
+						6
+					</div>
+				</div>
+				<div class="sphere-text">
+					Веселимся!
+				</div>
+			</div>
+		</div>
+		<button class="big-btn" onclick="openForm()">
+			хочу так же!
+		</button>
+	</section>
+
+	<footer>
+		<div class="w3-row">
+			<div class="w3-quarter">
+				<ul class="footer-text">
+					<li><a href="#">Аниматоры</a></li>
+					<li><a href="#">Шоу-программы</a></li>
+					<li><a href="#">Услуги</a></li>
+					<li><a href="#">Портфолио</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</div>
+			<div class="w3-half">
+				<div class="footer-cloud footer-cloud-left">
+					<a href="#">
+						<img class="footer-button" src="img/instagram.png">
+					</a>
+				</div>
+				<div class="footer-cloud footer-cloud-big">
+					<a href="#">
+						<img class="footer-logo" src="img/logo.png">
+					</a>	
+				</div>
+				<div class="footer-cloud footer-cloud-right">
+					<a href="#">
+						<img class="footer-button" src="img/facebook.png">
+					</a>
+				</div>
+				&nbsp;
+			</div>
+			<div class="w3-quarter">
+				<ul class="footer-text">
+					<li>Режим работы:</li>
+					<li>Воскресенье-пятница</li>
+					<li>с 7:00 до 20:00</li>
+					<li>Суббота - выходной</li>
+				</ul>
+			</div>
+			<div class="w3-quarter footer-mobile">
+				<a href="#">
+					<img class="footer-button" src="img/facebook.png">
+				</a>
+				<a href="#">
+					<img class="footer-button" src="img/instagram.png">
+				</a>
+			</div>
+		</div>
+	</footer>
+
+	<script src="js/jquery-scrollto.js"></script>
+	<script src="js/jquery.timer.js"></script>
+	<script src="js/slider.js"></script>
+	<script src="js/buttons.js"></script>
+</body>
+
+</html>

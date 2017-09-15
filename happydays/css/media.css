@@ -1,0 +1,143 @@
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+	
+	header {
+		height: 100vh;
+	}
+
+	.baloon {
+		display: none;
+	}
+
+	.logo-big {
+		width: 80%;
+	}
+
+	.video-section {
+		height: 40vh;
+	}
+
+	.video-section > video {
+		display: none;
+	}
+
+	.cloud, .cloud-big, .cloud-left, .cloud-right {
+		width: 100%;
+		height: 33%;
+		position: relative;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background: cover;
+	}
+
+	.caption {
+		font-size: 30pt;
+	}
+
+	.facts-section {
+		padding-bottom: 5%;
+	}
+
+	.facts-text {
+		font-size: 18pt;
+	}
+
+	.facts-text-caption {
+		font-size: 28pt;
+	}
+
+	.photocard-paper {
+		width: 300px;
+		height: 300px;
+	}
+
+	.slider-wrap {
+		width: 100%;
+	}
+
+	.slider-title {
+		font-size: 24pt;
+	} 
+
+	.arrow {
+		display: none;
+	}
+
+	.smiles-section > .caption::after, .smiles-section::after, .howto-section::before {
+		display: none;
+	}
+
+	.smiles-text-box {
+		width: 100%;
+	}
+
+	.smiles-text-caption {
+		font-size: 30pt;
+		padding: 5%;
+	}
+
+	.smiles-text {
+		font-size: 16pt;
+		padding-top: 5%;
+	}
+
+	.smiles-section > .caption {
+		margin-bottom: 5%;
+	}
+
+	.sphere-photo-text {
+		font-size: 20px;
+		margin-top: 0;
+	}
+
+	.sphere-photo-text-caption {
+		font-size: 24px;
+	}
+
+	.sphere-photo {
+		width: 300px;
+		height: 300px;
+	}
+
+	.prices-section > .w3-row > .w3-half {
+		margin: 0 0;
+	}
+
+	.prices-section > .w3-table{
+		width: 400px;
+	}
+
+	.contacts-section > .w3-table{
+		width: 400px;
+	}
+
+	footer > .w3-row > .w3-half {
+		display: none;
+	}
+
+	footer > .w3-row > .w3-quarter {
+		width: 30%;
+	}
+
+	.footer-text {
+		font-size: 16px;
+	}
+
+	.footer-mobile {
+		display: block;
+	}
+
+	.footer-button {
+		width: 60px;
+		margin: 20px 40px;
+	}
+}
+
+@media only screen and (min-device-width : 1367px) {
+
+	.smiles-section > .caption::after, .smiles-section::after, .howto-section::before {
+		display: none;
+	}
+
+}

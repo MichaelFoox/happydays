@@ -1,0 +1,19 @@
+@font-face{
+    font-family: BullyNormal;
+    src: url(../fonts/BullyNormal.otf); 
+}
+
+@font-face{
+	font-family: BullyThin;
+    src: url(../fonts/BullyThin.otf);
+}
+
+@font-face{
+	font-family: Chocolate;
+    src: url(../fonts/Chocolate.ttf);
+}
+
+@font-face{
+    font-family: Mount;
+    src: url(../fonts/Mount.ttf);
+}
